@@ -5,15 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Survey: Neato Friend Finder</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
 </head>
 
 <header>
@@ -33,7 +25,7 @@
         <select id="quest1">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(maybe)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -47,7 +39,7 @@
         <select id="quest2">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(perhaps)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -60,7 +52,7 @@
         <select id="quest3">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(it's possible)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -73,7 +65,7 @@
         <select id="quest4">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(kinda)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -87,7 +79,7 @@
         <select id="quest5">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(maybe)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -100,7 +92,7 @@
         <select id="quest6">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(possibly)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -114,7 +106,7 @@
         <select id="quest7">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(weather permitting)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -129,7 +121,7 @@
         <select id="quest8">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(arguably)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -142,7 +134,7 @@
         <select id="quest9">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(conceivably)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -153,10 +145,10 @@
             <h1> Question 10: </h1>Complete the following quotation: "The only thing we have to fear is fear itself" —
             FDR
         </label>
-        <select id="questionOne">
+        <select id="quest10">
             <option value="1">1(Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3(mayyyyyyyyyyyyybe)</option>
+            <option value="3">3(perchance)</option>
             <option value="4">4</option>
             <option value="5">5(Strongly Agree)</option>
         </select>
@@ -164,30 +156,33 @@
 
     <button class="btn btn-primary" type="submit">Click here to have your mind blown!</button>
 
-    <div class="modal" id="mainModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div id="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Your match</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <p>This is it! If you're not happy with your match... well there's nothing I really can do about that
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" />
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
     </div>
-
-    <br />
-    <br />
 
     <script type="text/javascript">
         $("#submit").on("click", function() {
@@ -203,7 +198,7 @@
             }
             if (validateForm() === true) {
                 let userData = {
-                    name: $("name").val();
+                    name: $("name").val(),
                     photo: $("photo").val(),
                     scores: [
                         $("#quest1").val(),
@@ -222,7 +217,7 @@
                 $.post(currentURL + "/api/friends", newUser, function(data) {
                     $("#matchName").text(data.name);
                     $("#matchPic").attr("src", data.photo);
-                    $("#modal fade").modal("toggle");
+                    $("#mymodal").modal("toggle");
                 })
                 $('#mainModal').modal();
             } else {
@@ -230,6 +225,15 @@
             }
             return false;
         });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
 

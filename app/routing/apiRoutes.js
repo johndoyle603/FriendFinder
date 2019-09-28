@@ -15,21 +15,21 @@ module.exports = function(app) {
             friendDifference: 1000
         };
 
-        let userData = req.body;
-        let userName = userData.name;
-        let userScores = userData.scores;
+        let data = req.body;
+        let name = data.name;
+        let scores = data.scores;
 
-        let b = userScores.map(function(item) {
+        let b = scores.map(function(item) {
             return parseInt(item, 10);
         });
-        userData = {
+        data = {
             name: req.body.name,
             photo: req.body.photo,
             scores: b
         };
 
-        console.log("Name: " + userName);
-        console.log("User Score " + userScores);
+        console.log("Name: " + name);
+        console.log("User Score " + scores);
 
         let sum = b.reduce((a, b) => a + b, 0);
 
@@ -57,9 +57,9 @@ module.exports = function(app) {
         }
         console.log(bestMatch);
 
-        friends.push(userData);
+        friends.push(data);
         console.log("New user added");
-        console.log(userData);
+        console.log(data);
         res.json(bestMatch);
     });
 };
