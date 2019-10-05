@@ -5,7 +5,7 @@ let friends = [
         photo: "./michigan.jpg",
         scores: [2, 1, 2, 3, 5, 1, 5, 1, 4, 3]
     },
-    {=
+    {
         name: "Montana X. Candyman",
         photo: "./montana.jpg",
         scores: [2, 5, 1, 2, 1, 1, 5, 1, 3, 4]
